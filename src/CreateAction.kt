@@ -19,7 +19,7 @@ class CreateAction : AnAction() {
         val psiFile = event.getData(LangDataKeys.PSI_FILE)
         frame.setOnclickListener {
             val str = parseObject(psiFile?.name?.split(".")?.get(0) ?: "Parent", it)
-            frame.isVisible = false
+            frame.dispose()
             if (str.isEmpty()) {
                 Messages.showErrorDialog("输入的内容不是一个 JSON ！", "ERROR")
             } else {

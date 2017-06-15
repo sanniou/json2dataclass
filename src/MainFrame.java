@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 /**
  * Created by yujichang on 2017/6/14.
@@ -16,6 +18,11 @@ public class MainFrame extends JDialog {
         setModal(true);
         setTitle("Json2DataClass");
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                dispose();
+            }
+        });
         setSize(600, 400);
         setResizable(false);
         setLocationRelativeTo(null);
