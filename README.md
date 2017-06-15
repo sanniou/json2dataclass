@@ -3,5 +3,5 @@
 插件开发入门之作，并没有界面……  
 a idea plugin use for convert json to kotlin data class，implement by [gson](https://github.com/google/gson)  
 
-![](https://raw.githubusercontent.com/sanniou/json2dataclass/master/GIF.gif)
+![](GIF.gif)
 
